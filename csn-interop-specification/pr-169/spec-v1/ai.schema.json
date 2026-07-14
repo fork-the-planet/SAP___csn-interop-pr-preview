@@ -1,11 +1,11 @@
 {
-  "description": "This is the interface description of @AI.",
+  "description": "This is the interface description of @Consumption.AIHint.",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sap.github.io/csn-interop-specification/spec-v1/ai.schema.json#",
-  "title": "AI Document",
+  "title": "Consumption.AIHint Document",
   "type": "object",
   "definitions": {
-    "@AI.hint": {
+    "@Consumption.AIHint": {
       "type": "string",
       "description": "Provides a hint for AI consumers (e.g., LLMs) on how to use or interpret the annotation target.\n\nThis allows keeping human-readable descriptions (e.g., `@EndUserText`) separate from\ndescriptions and hints targeted specifically for AI consumers.",
       "examples": [
@@ -17,7 +17,7 @@
         "Type",
         "Service"
       ],
-      "title": "@AI.hint"
+      "title": "@Consumption.AIHint"
     }
   },
   "examples": [
@@ -27,7 +27,7 @@
       "definitions": {
         "SalesOrder": {
           "kind": "entity",
-          "@AI.hint": "Use this entity to retrieve sales order header data. Filter by CustomerID and CreatedAt for typical lookups."
+          "@Consumption.AIHint": "Use this entity to retrieve sales order header data. Filter by CustomerID and CreatedAt for typical lookups."
         }
       }
     }
